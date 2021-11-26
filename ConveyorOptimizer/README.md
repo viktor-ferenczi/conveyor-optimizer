@@ -18,9 +18,11 @@ There are many more such cases, but the above ones are the worst offenders.
 
 The assumption is that if a pull request fails repeatedly, then it is likely to fail for an extended period. For example, if an assembler is out of some material for 5-10 seconds, then it will need to be produced by a refinery somewhere else on the conveyor network.
 
-But it would a refinery to finish producing something else in its queue first, or some ore being loaded from a player inventory or a newly connected ship. Usually none of these happen quickly.
+It would require the refinery to finish producing something else in its queue (in front of the missing material), or would require some ore being loaded from a player inventory or a newly connected ship (if ore is missing). Usually none of these happen quickly.
 
 The plugin saves processing time by ignoring (muting) most conveyor requests, which would likely to fail anyway based on the above heuristics.
+
+This plugin does not affect moving items between inventories by players, because they always succeed. Players can move only what's already there.
 
 There would be room for more optimization, but that would require more complex logic.
 
@@ -65,7 +67,11 @@ Prints performance statistics.
 
 `!conveyor maxmute FRAMES`
 
-Defines the minimum and maximum time conveyor pull requests are muted (ignored) in a specific direction before letting the next request through.
+Defines the minimum and maximum time conveyor pull requests are muted (ignored) in a specific direction before letting the next request through. 
+
+A higher mute time results in more savings, but the muted block will potentially resume processing only later due to the delay in getting the first items from the conveyor network. It does not affect subsequent pulls, as long as they are successful.
+
+Defaults are 60 and 300 frames (1 and 5 seconds) respectively.
 
 - After the first failed pull request the timer is set to `minmute` frames.
 - On each subsequent failing request the mute duration is doubled, but only up to `maxmute` frames.

@@ -45,11 +45,11 @@ A pull request direction is **muted** if pull requests are ignored in that direc
 
 ## Admin commands
 
-`!conveyor help`
+`!help conveyor`
 
 Prints the list of available sub-commands.
 
-`!conveyor help COMMAND`
+`!help conveyor COMMAND`
 
 Prints help on a specific sub-commands.
 
