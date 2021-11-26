@@ -50,7 +50,6 @@
     <ItemGroup>
       <Content Include="deploy_debug.bat" />
       <Content Include="deploy_release.bat" />
-      <Content Include="README.md" />
     </ItemGroup>
     <ItemGroup>
       <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
