@@ -10,19 +10,13 @@ namespace ConveyorOptimizer
     {
         private void Respond(string message)
         {
-            Context.Respond(message);
+            Context?.Respond(message);
         }
 
         private void RespondWithInfo()
         {
             var config = ConveyorOptimizerConfig.Instance;
-            if (!config.Enabled)
-            {
-                Respond($"Conveyor Optimizer plugin is disabled");
-                return;
-            }
-
-            Respond($"Conveyor Optimizer plugin is enabled");
+            Respond(config.Enabled ? $"Conveyor Optimizer plugin is enabled" : $"Conveyor Optimizer plugin is disabled");
             Respond($"MinMute = {config.MinMute}");
             Respond($"MaxMute = {config.MaxMute}");
         }
@@ -32,13 +26,6 @@ namespace ConveyorOptimizer
         // ReSharper disable once UnusedMember.Global
         public void Info()
         {
-            var identityId = Context.Player.IdentityId;
-            if (identityId == 0L)
-            {
-                Respond("This command can only be used in game");
-                return;
-            }
-
             RespondWithInfo();
         }
 
