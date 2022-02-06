@@ -10,11 +10,11 @@ Original content for historical relevance:
 
 # Conveyor Optimizer
 
-This is a [Torch plugin](https://torchapi.net/plugins/item/2d10eb73-03c1-4605-a9d1-392cf11e4c4c) for Space Engineers game servers.
+This is a [Torch plugin](https://torchapi.com/plugins/view/?guid=2d10eb73-03c1-4605-a9d1-392cf11e4c4c) for Space Engineers game servers.
 
 ## Description
 
-The [Conveyor Optimizer](https://torchapi.net/plugins/item/2d10eb73-03c1-4605-a9d1-392cf11e4c4c) plugin attempts to reduce the overhead imposed by repeated failing pull requests "spamming" the conveyor network.
+The [Conveyor Optimizer](https://torchapi.com/plugins/view/?guid=2d10eb73-03c1-4605-a9d1-392cf11e4c4c) plugin attempts to reduce the overhead imposed by repeated failing pull requests "spamming" the conveyor network.
 
 Such repeated pull requests happen if a functional block is looking for an item which is not available on the conveyor system.
 
