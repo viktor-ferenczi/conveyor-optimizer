@@ -1,6 +1,6 @@
 # DEPRECATED
 
-Based on my initial tests after the recent major game update, this plugin is not required anymore. 
+Based on my initial tests after the recent major game update (Warfare 2, game version 1.200.025), this plugin is not required anymore. 
 
 Please switch to the [Performance Improvements](https://github.com/viktor-ferenczi/performance-improvements) plugin: https://torchapi.com/plugins/view/?guid=c2cf3ed2-c6ac-4dbd-ab9a-613a1ef67784
 
