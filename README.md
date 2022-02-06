@@ -1,3 +1,13 @@
+# DEPRECATED
+
+Based on my initial tests after the recent major game update, this plugin is not required anymore. 
+
+Please switch to the [Performance Improvements](https://github.com/viktor-ferenczi/performance-improvements) plugin: https://torchapi.com/plugins/view/?guid=c2cf3ed2-c6ac-4dbd-ab9a-613a1ef67784
+
+---
+Original content for historical relevance:
+---
+
 # Conveyor Optimizer
 
 This is a [Torch plugin](https://torchapi.net/plugins/item/2d10eb73-03c1-4605-a9d1-392cf11e4c4c) for Space Engineers game servers.
